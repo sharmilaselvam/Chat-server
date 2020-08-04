@@ -1,0 +1,47 @@
+body{
+    
+    animation: dpd 2s;
+}
+form{
+    padding:10px 0px 0px 250px;
+    
+}
+form input{
+    margin: 10px 0px;
+    
+}
+form span{
+    color: blue;
+    font-size: 25px;
+}
+#sub{
+    color: rgb(87, 85, 85);
+    border-color: transparent;
+    border-radius: 0%;
+}
+#footer{
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    background-color: gray;
+    position: fixed;
+    height: 2%;
+    border: white;
+}
+#dept{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.top{
+    margin-top: 50px;
+}
+label.w-100{
+    display: none;
+}
+
+@keyframes dpd{
+    0%  {opacity: 0;}
+    100%{opacity: 1;}
+}

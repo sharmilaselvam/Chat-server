@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+body {
+    position: relative;
+    background-size: 1000% 1000%;
+    background-image: linear-gradient(35deg, #1100ff, #2196F3, #3F51B5, #1100ff);
+    padding: 0; 
+    margin: 0;
+    color:#fff;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    animation: 10s backanim infinite;
+}
+@keyframes backanim{
+    0%{background-position: 0%,40%}
+    50%{background-position: 100%,40%}
+    100%{background-position: 0%,40%}
+}
+#mainDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.appname {
+    width: 100%;
+    text-decoration:none;
+    font-size: 50pt;
+    transition: 1s;
+    position: relative;
+    height: 200px;
+    top: 30%;
+}
+.dropMenu{
+    align-content: center;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    bottom: 0;
+    transition-duration: 1s;
+    opacity: 0;
+}
+#mainDiv:hover  .dropMenu{
+top: calc(80% - 100px);
+opacity: 1;
+}
+#mainDiv:hover .appname{
+    font-size: 100pt;
+}
+a img{
+    height: 100px;
+}
